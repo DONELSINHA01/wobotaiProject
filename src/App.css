@@ -38,6 +38,7 @@
   height: 40px;
   width: 240px;
   background-color: #F3F3F4;
+
   border: 1px solid #F0F0F0;
   border-radius: 6px;
   padding-right: 5px;
@@ -45,6 +46,7 @@
 .search-input{
   margin-left: 5px;
   height: 100%;
+  padding-right: 50px;
   background-color: #F3F3F4;
   border: none;
   outline: none;
@@ -71,28 +73,36 @@
 }
 .location-dropdown{
   border: 2px solid gainsboro;
-
+  cursor: pointer;
   border-radius: 5px;
   display: flex;
   align-items: center;
   padding-right: 22px;
   width: 190px;
+  
 }
+
 .location-filter{
   border: none;
   margin-right: 7px;
   width: 190px;
   outline: none;
+  cursor: pointer;
+  padding-right: 50px;
+  height: 37px;
 }
 .status-filter{
   border: none;
   margin-right: 7px;
+  height: 37px;
+  cursor: pointer;
 }
 .status-dropdown{
   border: 2px solid gainsboro;
   border-radius: 5px;
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 table {
@@ -172,6 +182,7 @@ tr:last-child {
   text-align: center;
   background-color: rgb(223, 248, 239);
   color:#029262;
+  width: 70px;
   
 }
 .inactive-status{
@@ -180,6 +191,7 @@ tr:last-child {
   border-radius: 2px;
   text-align: center;
   background-color: #F0F0F0;
+  width: 70px;
   
 }
 
@@ -188,6 +200,8 @@ tr:last-child {
   margin-right: 10px;
   border-radius: 4px ;
   padding: 8px 12px;
+  width: 100px;
+  cursor: pointer;
   
 }
 .delete-btn{
@@ -195,7 +209,7 @@ tr:last-child {
   color: whitesmoke;
 }
 .delete-btn:hover{
-  background-color: whitesmoke;
+  background-color: rgb(215, 214, 214);
   color: rgb(252, 89, 30);
 }
 
@@ -205,6 +219,10 @@ tr:last-child {
 .status-btn-deactivation{
   background-color: rgb(185, 181, 180);
   color: whitesmoke;
+}
+.status-btn-deactivation:hover{
+  background-color: rgb(220, 215, 214);
+  color: rgb(249, 75, 12);
 }
 
 
