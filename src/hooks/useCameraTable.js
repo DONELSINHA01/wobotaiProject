@@ -37,7 +37,7 @@ export const useCameraTable = () => {
     const handleStatusToggle = async (id, currentStatus) => {
         const newStatus = currentStatus === "Active" ? "Inactive" : "Active";
         try {
-            const response = await axios.post(
+            const response = await axios.put(
                 "https://api-app-staging.wobot.ai/app/v1/update/camera/status",
                 { id, status: newStatus },
                 { headers: { Authorization: "Bearer 4ApVMIn5sTxeW7GQ5VWeWiy" } }
