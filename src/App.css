@@ -316,9 +316,6 @@ tr:last-child {
     text-align: left;
   }
   
-  tr:last-child td {
-    border-bottom: none;
-  }
   .main-name{
     display: flex;
     width: 170px;
