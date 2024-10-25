@@ -1,6 +1,8 @@
+
 .App {
   font-family: 'Inter', Arial, sans-serif;
   padding: 20px;
+  margin: 0 auto;
   background-color: rgba(249, 249, 249, 0.87);
   color: #7E7E7E;
 }
@@ -79,7 +81,6 @@
   align-items: center;
   padding-right: 22px;
   width: 190px;
-  
 }
 
 .location-filter{
@@ -247,4 +248,76 @@ tr:last-child {
   color: #545454;
   box-shadow: 0 0 5px gainsboro;
 
+}
+
+@media (max-width: 600px) {
+  .active-status{
+    margin-right: 12px;
+  }
+  .filters{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .filter{
+    width: 200px;
+
+  }
+  .location-filter{
+    height: 30px;
+  }
+  table{
+    margin-top: 100px;
+  }
+
+  thead {
+    display: none;
+  }
+  
+
+  tr {
+    display: block;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  td {
+    display: block;
+    text-align: right;
+    position: relative;
+    padding-left: 50%;
+    border-bottom: 1px solid #ddd;
+    margin-top: 12px;
+  }
+  
+  td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px);
+    white-space: nowrap;
+    font-weight: bold;
+    color: #333;
+    text-align: left;
+  }
+  
+  tr:last-child td {
+    border-bottom: none;
+  }
+  .main-name{
+    display: flex;
+    width: 170px;
+
+  }
+
+}
+
+@media (max-width:380px){
+  .main-name {
+    font-size: smaller;
+  }
 }
