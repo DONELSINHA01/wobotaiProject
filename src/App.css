@@ -1,10 +1,10 @@
-
 .App {
   font-family: 'Inter', Arial, sans-serif;
   padding: 20px;
+  max-width: 1400px;
   margin: 0 auto;
   background-color: rgba(249, 249, 249, 0.87);
-  color: #7E7E7E;
+  color: #7e7d7d;
 }
 .header{
   display: flex;
@@ -250,7 +250,18 @@ tr:last-child {
 
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1048px){
+  .status-btn-activation, .status-btn-deactivation{
+    margin-bottom: 4px;
+  }
+  td{
+    padding: 5px;
+  }
+
+}
+
+@media (max-width: 746px) {
+
   .active-status{
     margin-right: 12px;
   }
